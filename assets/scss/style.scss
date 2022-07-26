@@ -120,6 +120,21 @@
 	}
 }
 
+
+#report{
+	.modal-content{
+		border-radius:20px !important;
+		.btn-group{
+			border-top:1px solid #D2D3D7;
+			button:first-child{
+				border-right:1px solid #D2D3D7;
+			}
+		}
+	}
+	.modal-body{
+		font-size: 1.5rem;
+	}
+}
 .navbar-back{
 	z-index: 2;
 	background: white;
@@ -222,8 +237,24 @@
 		li:last-child{
 			background: none;
 			img{
-				// width: 40px;
 				height: 100%;
+			}
+		}
+
+		li:last-child:not(.active){
+			img:last-child{
+				display: none;
+			}
+		}
+
+		li:last-child.active{
+			background: none;
+			img{
+				height: 100%;
+			}
+
+			img:first-child{
+				display: none;
 			}
 		}
 	}
@@ -491,6 +522,36 @@
 				}
 			}
 		}
+	}
+
+	.setting{
+		li{
+			list-style: none;
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+
+		.setting-item{
+			padding: 20px 20px;
+			border-bottom:1px solid #D2D3D7;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			span{
+				color: #D2D3D7;
+				font-size: 1.5rem;
+			}
+		}
+
+		.setting-item.title{
+			padding: 25px 20px;
+			background-color: #F6F6F6;
+			border:none;
+		}
+
+
 	}
 }
 
