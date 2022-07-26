@@ -1,0 +1,14 @@
+<svg id="Group_75" data-name="Group 75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.625" height="59.628" viewBox="0 0 59.625 59.628">
+  <defs>
+    <filter id="Facebook__x28_alt_x29__1_" x="0" y="0" width="59.625" height="59.628" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Facebook__x28_alt_x29__1_)">
+    <path id="Facebook__x28_alt_x29__1_2" data-name="Facebook__x28_alt_x29__1_" d="M57.625,9.605A9.953,9.953,0,0,0,48.023,0H9.605A9.953,9.953,0,0,0,0,9.605V48.02a9.953,9.953,0,0,0,9.605,9.605H28.812V35.855H21.77v-9.6h7.043V22.51c0-6.454,4.845-12.264,10.8-12.264h7.764v9.605H39.617c-.849,0-1.841,1.031-1.841,2.576v3.825h9.605v9.605H37.776v21.77H48.02a9.955,9.955,0,0,0,9.605-9.605Z" fill="#fff"/>
+  </g>
+</svg>
