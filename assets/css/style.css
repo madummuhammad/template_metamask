@@ -19,6 +19,24 @@
   height: 50vh;
 }
 
+.form-check-input {
+  padding: 10px !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.form-check-input:checked {
+  background-color: #F74F5B !important;
+  border-color: #0d6efd;
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: url("../img/icon/check.svg") !important;
+  border: none;
+}
+
 .main-login {
   min-height: 100vh;
 }
@@ -284,6 +302,59 @@
   border-top-left-radius: 50%;
 }
 
+.main-snap {
+  padding-top: 60px;
+  max-height: calc(100vh - 60px);
+  overflow: scroll;
+  padding-bottom: 80px;
+}
+.main-snap .list-snap li {
+  list-style: none;
+}
+.main-snap .list-snap li a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-snap .list-snap .list-snap-item {
+  padding: 20px 20px;
+  border-bottom: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-snap .list-snap .list-snap-item span {
+  color: #D2D3D7;
+  font-size: 1.5rem;
+}
+.main-snap .list-snap .list-snap-item .list-snap-profile {
+  width: 80px;
+}
+.main-snap .list-snap .list-snap-item .list-snap-profile img {
+  border-radius: 100%;
+}
+.main-snap .list-snap .list-snap-item .list-snap-content {
+  line-height: 1rem;
+}
+
+.snap-bottom-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: blue;
+}
+.snap-bottom-bar input {
+  height: 80px;
+  border: none;
+}
+.snap-bottom-bar button {
+  border: none;
+}
+.snap-bottom-bar button img {
+  width: 40%;
+}
+
 .main {
   padding-top: 60px;
   max-height: calc(100vh - 60px - 80px);
@@ -474,6 +545,10 @@
   padding: 25px 20px;
   background-color: #F6F6F6;
   border: none;
+}
+
+.snap-bottom-bar {
+  position: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
