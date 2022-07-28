@@ -37,6 +37,11 @@
   border: none;
 }
 
+body.splash {
+  background: url("../img/background.png");
+  background-size: cover;
+}
+
 .main-login {
   min-height: 100vh;
 }
@@ -451,6 +456,7 @@
   align-items: center;
 }
 .main .article .card .card-header .left {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -466,14 +472,14 @@
   border-radius: 100%;
 }
 .main .article .card .card-header .right .border {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: #FEDCDD;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px;
+  padding: 8px;
 }
 .main .article .card .card-header .right .border img {
   width: 100%;
@@ -520,7 +526,59 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
 }
+.main .list-article .card-href .card .row div:nth-child(2) .card-body .ratting .ratting-title span {
+  color: #E3C1C1;
+}
 .main .list-article .card-href .card img {
+  border-radius: 20px;
+}
+.main .list-review {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+.main .list-review .card {
+  padding: 0;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5%;
+  box-shadow: 1px 5px 16px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 5px 16px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 5px 16px 0px rgba(0, 0, 0, 0.25);
+}
+.main .list-review .card .row div:nth-child(1) a {
+  text-decoration: none;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .title {
+  text-decoration: none;
+  color: inherit;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .card-text {
+  overflow: hidden;
+  max-height: 6rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .ratting {
+  color: #898989;
+  line-height: 0.2rem;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .ratting .ratting-title span {
+  color: #E3C1C1;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .ratting .ratting-title a {
+  text-decoration: underline;
+  color: inherit;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .star-statistic {
+  font-size: 14px;
+  line-height: 10px;
+}
+.main .list-review .card img {
   border-radius: 20px;
 }
 .main .setting li {
@@ -545,6 +603,94 @@
   padding: 25px 20px;
   background-color: #F6F6F6;
   border: none;
+}
+.main .new-post .card {
+  border: none;
+}
+.main .new-post .card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .new-post .card .card-header .left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.main .new-post .card .card-header .left .name {
+  padding-left: 10px;
+}
+.main .new-post .card .card-header .left .name p {
+  margin: 0;
+}
+.main .new-post .card .card-header .left img {
+  width: 12%;
+  border-radius: 100%;
+}
+.main .new-post .card .card-header .right .border {
+  width: 40px;
+  height: 40px;
+  background-color: #FEDCDD;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+}
+.main .new-post .card .card-header .right .border img {
+  width: 100%;
+}
+.main .new-post .card .img {
+  position: relative;
+}
+.main .new-post .card .img .upload {
+  height: 35vh;
+  background-color: #FFEDEE;
+  position: relative;
+}
+.main .new-post .card .img .upload p {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.main .new-post .card .img .upload label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 5%;
+}
+.main .new-post .card .img .upload label img {
+  width: 20%;
+}
+.main .new-post .card .img .post-back {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: red;
+}
+.main .new-post .card .card-body textarea {
+  width: 100%;
+  min-height: 200px;
+  border: none;
+  padding: 10px;
+}
+.main .new-post .card .card-body .swipe-button {
+  padding: 30px;
+}
+.main .new-post .card .card-body .swipe-button button {
+  width: 100%;
+  color: #989898;
+  background-color: #F5F5F5;
 }
 
 .snap-bottom-bar {
