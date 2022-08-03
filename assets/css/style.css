@@ -360,9 +360,93 @@ body.splash {
   width: 40%;
 }
 
+.main-forgot-password {
+  padding-top: 60px;
+  max-height: 100vh;
+  overflow: scroll;
+}
+.main-forgot-password .img-main-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.main-forgot-password .img-main-container img {
+  width: 40%;
+  border-radius: 20px;
+}
+.main-forgot-password .img-main-container .img-profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-forgot-password .img-main-container .img-profile img {
+  border-radius: 100%;
+}
+.main-forgot-password .img-main-container .img-profile .form-file-input {
+  position: absolute;
+  bottom: -20px;
+}
+.main-forgot-password .img-main-container .img-profile .form-file-input #input-profile {
+  display: none;
+}
+.main-forgot-password .img-main-container .img-profile .form-file-input label {
+  background: rgb(245, 133, 36);
+  background: linear-gradient(117deg, rgb(245, 133, 36) 0%, rgb(249, 43, 127) 100%);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid white;
+}
+.main-forgot-password .form-forgot-password {
+  position: relative;
+}
+.main-forgot-password .form-forgot-password form {
+  font-size: 21px !important;
+}
+.main-forgot-password .form-forgot-password form input {
+  font-size: inherit;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0px;
+}
+.main-forgot-password .form-forgot-password .btn-forgot-password {
+  width: 100%;
+  color: white;
+  font-size: inherit;
+}
+.main-forgot-password .form-change-password {
+  position: relative;
+  min-height: 80vh;
+}
+.main-forgot-password .form-change-password form {
+  font-size: 21px !important;
+}
+.main-forgot-password .form-change-password form input {
+  font-size: inherit;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0px;
+}
+.main-forgot-password .form-change-password .btn-change-password {
+  color: white;
+  font-size: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+}
+
 .main {
   padding-top: 60px;
-  max-height: calc(100vh - 60px - 80px);
+  max-height: calc(100vh - 60px);
   overflow: scroll;
 }
 .main .img-main-container {
@@ -402,46 +486,6 @@ body.splash {
   flex-direction: column;
   align-items: center;
   border: 5px solid white;
-}
-.main .form-forgot-password {
-  position: relative;
-}
-.main .form-forgot-password form {
-  font-size: 21px !important;
-}
-.main .form-forgot-password form input {
-  font-size: inherit;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-radius: 0px;
-}
-.main .form-forgot-password .btn-forgot-password {
-  width: 100%;
-  color: white;
-  font-size: inherit;
-}
-.main .form-change-password {
-  position: relative;
-  min-height: 80vh;
-}
-.main .form-change-password form {
-  font-size: 21px !important;
-}
-.main .form-change-password form input {
-  font-size: inherit;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-radius: 0px;
-}
-.main .form-change-password .btn-change-password {
-  color: white;
-  font-size: inherit;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  right: 20px;
 }
 .main .article .card {
   border: none;
@@ -565,7 +609,6 @@ body.splash {
 }
 .main .list-review .card .row div:nth-child(2) .card-body .ratting {
   color: #898989;
-  line-height: 0.2rem;
 }
 .main .list-review .card .row div:nth-child(2) .card-body .ratting .ratting-title span {
   color: #E3C1C1;
@@ -573,6 +616,9 @@ body.splash {
 .main .list-review .card .row div:nth-child(2) .card-body .ratting .ratting-title a {
   text-decoration: underline;
   color: inherit;
+}
+.main .list-review .card .row div:nth-child(2) .card-body .ratting p {
+  margin-bottom: 0;
 }
 .main .list-review .card .row div:nth-child(2) .card-body .star-statistic {
   font-size: 14px;
@@ -659,7 +705,7 @@ body.splash {
   display: flex;
   justify-content: center;
   width: 100%;
-  bottom: 5%;
+  bottom: 35%;
 }
 .main .new-post .card .img .upload label img {
   width: 20%;
@@ -680,12 +726,12 @@ body.splash {
 }
 .main .new-post .card .card-body textarea {
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
   border: none;
   padding: 10px;
 }
 .main .new-post .card .card-body .swipe-button {
-  padding: 30px;
+  padding: 0px 30px;
 }
 .main .new-post .card .card-body .swipe-button button {
   width: 100%;

@@ -414,10 +414,9 @@ body.splash{
 
 }
 
-
-.main{
+.main-forgot-password{
 	padding-top: 60px;
-	max-height: calc(100vh - 60px - 80px);
+	max-height: calc(100vh);
 	overflow: scroll;
 	.img-main-container{
 		margin-top: 60px;
@@ -478,6 +477,7 @@ body.splash{
 			font-size: inherit;
 		}
 	}
+
 	.form-change-password{
 		position: relative;
 		min-height:80vh;
@@ -502,6 +502,56 @@ body.splash{
 
 
 	}
+}
+
+
+.main{
+	padding-top: 60px;
+	max-height: calc(100vh - 60px);
+	overflow: scroll;
+	.img-main-container{
+		margin-top: 60px;
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: center;
+		img{
+			width: 40%;
+			border-radius: 20px;
+		}
+
+		.img-profile{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			img{
+				border-radius:100%;
+			}
+
+			.form-file-input{
+				position: absolute;
+				bottom:-20px;
+				#input-profile{
+					display: none;
+				}
+				label{
+					background: rgb(245,133,36);
+					background: linear-gradient(117deg, rgba(245,133,36,1) 0%, rgba(249,43,127,1) 100%);
+					width: 70px;
+					height: 70px;
+					border-radius: 100%;
+					color: white;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items:center;
+					border:5px solid white;
+
+				}
+			}
+		}
+	}
+
+
 	.article{
 		.card{
 			border:none;
@@ -652,7 +702,7 @@ body.splash{
 						}
 						.ratting{
 							color: #898989;
-							line-height:0.2rem;
+							// line-height:0.9rem;
 							.ratting-title{
 								span{
 									color: #E3C1C1;
@@ -662,6 +712,10 @@ body.splash{
 									text-decoration: underline;
 									color: inherit;
 								}
+							}
+
+							p{
+								margin-bottom: 0;
 							}
 						}
 
@@ -766,7 +820,7 @@ body.splash{
 						display: flex;
 						justify-content: center;
 						width: 100%;
-						bottom: 5%;
+						bottom: 35%;
 						img{
 							width: 20%;
 						}
@@ -793,12 +847,12 @@ body.splash{
 			.card-body{
 				textarea{
 					width: 100%;
-					min-height: 200px;
+					min-height: 150px;
 					border: none;
 					padding: 10px;
 				}
 				.swipe-button{
-					padding: 30px;
+					padding: 0px 30px;
 					button{
 						width: 100%;
 						color: #989898;
